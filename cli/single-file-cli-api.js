@@ -146,7 +146,7 @@ async function finish(options) {
 			}
 		});
 	}
-	if (!options.browserDebug) {
+	if (!options.browserDebug && !options.browserServer) {
 		return backend.closeBrowser();
 	}
 }
